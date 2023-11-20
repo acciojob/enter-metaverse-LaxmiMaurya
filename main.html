@@ -8,7 +8,26 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<p id="status">Enter the Metaverse</p>
+  <button id="enterBtn">Enter</button>
+
     <script type="text/javascript" src="./script.js">
+		function updateStatus() {
+      
+      var statusElement = document.getElementById('status');
+
+      
+      statusElement.textContent = 'Entered Metaverse';
+
+      
+      var h1Element = document.createElement('h1');
+      h1Element.textContent = 'Entered Metaverse';
+      document.body.appendChild(h1Element);
+    }
+
+    
+    document.getElementById('enterBtn').addEventListener('click', updateStatus);
+  
 </script>
 
 </body>
